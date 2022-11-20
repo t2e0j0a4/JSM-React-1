@@ -1,0 +1,94 @@
+.App__possibility{
+    width: 100%;
+    max-width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.App__possibility-image {
+    width: 45%;
+}
+
+.App__possibility-image img{
+    width: 100%;
+}
+
+.App__possibility-content {
+    width: 55%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.App__possibility-content h1{
+    width: 80%;
+    margin: 0.4rem 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.App__possibility-content p {
+    width: 80%;
+    margin: 0.4rem 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #81AFDD;
+}
+
+.App__possibility-content h4 {
+    width: 80%;
+    margin: 0.4rem 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.App__possibility-content h4:hover{
+    color: #FAFAFA;
+    text-decoration: underline;
+}
+
+@media screen and (max-width : 750px){
+    .App__possibility{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .App__possibility-image , .App__possibility-content {
+        width: 100%;
+    }
+
+    .App__possibility-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .App__possibility-content h1{
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    
+    .App__possibility-content p {
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+
+    .App__possibility-content h4 {
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+}

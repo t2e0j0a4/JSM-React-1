@@ -1,0 +1,110 @@
+.App__blog{
+    width: 100%;
+    max-width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.App__blog-head{
+    width: 50%;
+}
+
+.App__blog-head h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.App__blog-blogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.App__blogs-blogs_rem {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+
+@media screen and (max-width : 1050px) {
+
+    .App__blog-head{
+        width: 70%;
+    }
+
+    .App__blog-head h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 60px;
+        letter-spacing: -0.04em;
+    }
+
+    .App__blog-blogs_one{
+        display: none   ;
+    }
+    
+    .App__blog-blogs{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .App__blogs-blogs_rem {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .App__blog-head{
+        width: 80%;
+    }
+
+    .App__blog-blogs_one{
+        margin: auto;
+        display: block;
+    }
+
+    .App__blog-head h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.04em;
+    }
+
+    .App__blogs-blogs_rem {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .App__blog-head{
+        width: 90%;
+    }
+
+    .App__blog-head h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+    }
+}

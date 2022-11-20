@@ -1,0 +1,143 @@
+.App__about {
+    width: 100%;
+    max-width: 84%;
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    /* Gradiants for Background */
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(39deg, rgba(6, 57, 191, 1) 0%, rgba(23, 29, 78, 1) 79%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(39deg, rgba(6, 57, 191, 1) 0%, rgba(23, 29, 78, 1) 79%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(39deg, rgba(6, 57, 191, 1) 0%, rgba(23, 29, 78, 1) 79%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0639BF', endColorstr='#171D4E', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(39deg, rgba(6, 57, 191, 1) 0%, rgba(23, 29, 78, 1) 79%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(39deg, rgba(6, 57, 191, 1) 0%, rgba(23, 29, 78, 1) 79%);
+
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px 2px rgba(0, 4, 39, 0.726);
+}
+
+.App__about-app{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.App__about-app .App__feature-head{
+    width: 35%;
+    padding: 10px;
+}
+
+.App__about-app .App__feature-desc {
+    width: 65%;
+    margin: 10px;
+}
+
+.App__about-head{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row;
+}
+
+.App__about-head h1{
+    width: 80%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 64px;
+}
+
+.App__about-head p {
+    width: 20%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: var(--white);
+    cursor: pointer;
+}
+
+.App__about-head p:hover{
+    text-shadow: 0px 1px 4px #000000a0;
+    text-decoration: underline;
+}
+
+.App__about-features{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0.4rem;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.App__about-features .App__about-features_each {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.App__about-features .App__feature-head {
+    margin: 0.2rem 0;
+}
+
+@media screen and (max-width : 950px) {
+    .App__about-features{
+        flex-wrap: wrap;
+    }
+
+    .App__about-head{
+        flex-direction: column;
+        width:100%;
+    }
+
+    .App__about-head h1 {
+        width: 100%;
+        margin: 10px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .App__about-head p{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .App__about-app {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .App__about-app .App__feature-desc , .App__about-app .App__feature-head {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 550px){
+    .App__about-head h1 {
+        width: 100%;
+        margin: 10px;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 48px;
+    }
+}

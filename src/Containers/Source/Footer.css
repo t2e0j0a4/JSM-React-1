@@ -1,0 +1,129 @@
+.App__footer{
+    width: 100%;
+    max-width: 100%;
+    margin: 4rem auto 0 auto;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #031B34;
+}
+
+.App__footer-head{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.App__footer-head h1 {
+    width: 40%;
+    text-align: center;
+}
+
+.App__footer-head button {
+    background-color: transparent;
+    color: var(--white);
+    padding: 0.8rem 1.6rem;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 12px #000000b0;
+}
+
+.App__footer-foot_links{
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.App__footer-foot_links-1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.App__footer-foot_links-1 a img{
+    width: 118px;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+.App__footer-foot_links-1 p{
+    margin: 0.5rem 0;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.App__footer-foot_links-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.App__footer-foot_links-2 div{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.App__footer-foot_links-2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.App__footer-foot_links-2 ul li {
+    color: var(--white);
+    margin: 0.2rem 0;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.App__footer-foot_links-2 ul li:hover {
+    text-decoration: underline;
+    color: #FAFAFA;
+}
+
+@media screen and (max-width : 900px) {
+    .App__footer{
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #031B34;
+    }
+
+    .App__footer-head h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .App__footer-foot_links{
+        margin: 2rem 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .App__footer-foot_links-1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+        
+    .App__footer-foot_links-2{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+}

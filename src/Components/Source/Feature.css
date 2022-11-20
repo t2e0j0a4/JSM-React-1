@@ -1,0 +1,42 @@
+.App__feature-head .App__feature-div {
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+}
+
+.App__feature-head .App__feature-title h1{
+    color: var(--white);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.App__feature-desc p{
+    color: #81AFDD;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.App__feature-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width : 950px) {
+    .App__feature-head .App__feature-title h1{
+        font-weight: 800;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .App__feature-desc p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 27px;
+    }
+}

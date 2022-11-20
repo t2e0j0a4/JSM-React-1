@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+:root{
+
+    --font-p : 'Raleway', sans-serif;
+    --font-s : 'Bukhari Script', sans-serif;
+
+    --color-p : #16213E;
+    --color-s : #0F3460;
+    --color-t : #404258;
+
+    --black : #232323;
+    --white : #FAFAFA;
+
+    --color-btn : #da1e05;
+
+    --gradient-text: linear-gradient(89.97deg, #cdb503 1.84%, #ec1704 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
 }
